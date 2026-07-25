@@ -1,7 +1,25 @@
 aid: d
-name: d
-description: d is a company surfaced as a portfolio company of qiming and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/d.png
+name: Downjoy (当乐网)
+description: 'Downjoy (当乐网, d.cn) is a Chinese mobile game distribution and community
+  platform operated by Beijing Downjoy Information Technology Co., Ltd (北京当乐信息技术有限公司).
+  The site offers mobile game downloads, gaming news and original editorial content,
+  game-related video, community features, and game rankings and recommendations. Downjoy
+  also runs an open platform at open.d.cn where game publishers and developers register,
+  create and submit games, integrate the Downjoy SDK, and manage launch and updates.
+  Surfaced as a portfolio company of Qiming Venture Partners and added to the API
+  Evangelist network; enriched with verified public identity and infrastructure probes.'
 url: https://raw.githubusercontent.com/api-evangelist/d/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +29,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Mobile Games
+- Gaming
+- Game Distribution
+- Developer Platform
+- SDK
+- China
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +45,16 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/d-domain-security.yml
+- type: WellKnown
+  url: well-known/d-well-known.yml
 - type: Website
-  url: https://d.cn
+  url: https://www.d.cn
+- type: DeveloperPortal
+  url: https://open.d.cn/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
